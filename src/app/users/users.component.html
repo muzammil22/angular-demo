@@ -1,0 +1,21 @@
+<div>
+    <table >
+        <tr>
+          <th mat-sort-header="title">First Name</th>
+          <th mat-sort-header="title">Last Name</th>
+          <th mat-sort-header="completed">Email</th>
+          <th mat-sort-header="title">Phone Number</th>
+        </tr>
+      
+        <tr *ngFor="let item of user_list">
+          <td>{{item.fname}}</td>
+          <td>{{item.lname}}</td>
+          <td>{{item.email}}</td>
+          <td>{{item.phone_num}}</td>
+        </tr>
+      </table>
+</div>
+
+<div>
+    <span></span>
+</div>

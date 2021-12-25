@@ -1,0 +1,11 @@
+#user_form {
+
+    .form-fields {
+        display: flex;
+        flex-direction: column;
+
+        .form-btns {
+            margin-top: 24px;
+        }
+    }
+}

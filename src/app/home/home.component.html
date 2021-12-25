@@ -1,0 +1,52 @@
+<div id="user_form">
+    <form [formGroup]="user_form" #formDirective="ngForm">
+				
+        <div class="form-fields mt-20">
+    
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>First Name</mat-label>
+                <input 
+                    matInput 
+                    formControlName="first_name"
+                    placeholder="Enter First Name"
+                >
+                <!-- <mat-error *ngIf="formDirective.submitted && formControls.first_name.invalid">Please enter name</mat-error> -->
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Last Name</mat-label>
+                <input 
+                    matInput 
+                    formControlName="last_name"
+                    placeholder="Enter Last Name"
+                >
+                <!-- <mat-error *ngIf="formDirective.submitted && formControls.last_name.invalid">Please enter name</mat-error> -->
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Email</mat-label>
+                <input 
+                    matInput 
+                    formControlName="email"
+                    placeholder="Enter email"
+                >
+                <!-- <mat-error *ngIf="formDirective.submitted && formControls.email.invalid">Please enter name</mat-error> -->
+            </mat-form-field>
+    
+            <mat-form-field appearance="outline" floatLabel="always">
+                <mat-label>Phone Number</mat-label>
+                <input 
+                    matInput 
+                    formControlName="phone_num"
+                    placeholder="Enter Phone Number"
+                >
+                <!-- <mat-error *ngIf="formDirective.submitted && formControls.phone_num.invalid">Please enter name</mat-error> -->
+            </mat-form-field>
+
+            <button type="submit" (click)="submit(formDirective)" mat-raised-button class="form-btns mat-accent">
+                Submit
+            </button>
+
+        </div>
+    </form>
+</div>
